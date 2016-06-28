@@ -1,0 +1,60 @@
+/*====== Sidebar ======
+====================================*/
+#sidebar {
+	display: inline-block;
+	width: 13%;
+	vertical-align: top;
+	float: right;
+}
+
+#sidebar a {
+	text-decoration: none;
+}
+
+#sidebar .price {
+	color: #777;
+	line-height: 1.2em;
+	font-size: .9em;
+}
+
+#sidebar h2 {
+	font-size: .9em;
+    color: #102b5a;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#sidebar .line {
+	margin: 0;
+}
+
+#arrow-up {
+	font-size: 2em;
+	text-align: center;
+	transform: rotate(90deg);
+}
+
+#arrow-down {
+	font-size: 2em;
+	text-align: center;
+	transform: rotate(-90deg);
+}
+
+.side-product {
+	width: 70%;
+	margin: .7em auto 1.2em;
+	font-size: .9em;
+	color: #264884;
+	line-height: 1.2em;
+
+}
+
+.inner {
+	width: 110px;
+	height: 140px;
+	margin: 0 auto;
+	background-color: #f3f3f3;
+}
+

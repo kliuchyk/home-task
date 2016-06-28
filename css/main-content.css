@@ -1,0 +1,571 @@
+#breadcrumbs li {
+	float: left;
+}
+
+#main-content {
+	display: inline-block;
+	width: 85%;
+	margin-right: 1em;
+}
+
+#product-view,
+#product-description {
+	display: inline-block;
+	width: 45%;
+	vertical-align: top;
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+/*====== Product-View Section ======
+====================================*/
+#product-view {
+	margin-right: 3.5em;
+}
+
+.main-image img {
+	width: 100%;
+	padding-right: 5px;
+	border: 2px solid #e0dede;
+}
+
+.other-images img {
+	display: inline-block;
+	margin: .5em;
+}
+
+#handbags {
+	width: 80%;
+}
+
+#handbags img {
+	display: block;
+	padding: 1em;
+	max-width: 100%;
+}
+
+.bags-img {
+	position: relative;
+}
+
+.promotion {
+	position: absolute;
+	bottom: 20%;
+	right: 0%;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.promotion h2 {
+	font-size: 150%;
+	letter-spacing: 2px;
+	color: #aaa;
+}
+
+.promotion p {
+	font-size: 95%;
+	letter-spacing: .5px;
+	color: #333;
+}
+
+.promotion p:last-of-type:after,
+.promotion p:last-of-type:before {
+	left: 75%;
+	top: 85%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.promotion p:last-of-type:after {
+	border-color: rgba(136, 183, 213, 0);
+	border-left-color: #fff;
+	border-width: 3px;
+	margin-top: -3px;
+}
+.promotion p:last-of-type:before {
+	border-color: rgba(149, 173, 189, 0);
+	border-left-color: #000;
+	border-width: 5px;
+	margin-top: -5px;
+}
+
+
+/*====== Product-Name Section ======
+====================================*/
+.product-name {
+	position: relative;
+	margin-bottom: 1em;
+}
+
+.product-name h2 {
+	font-size: 130%;
+	color: #102b5a;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+
+.product-name > p {
+	color: red;
+	font-size: 95%;
+}
+
+.product-name  p {
+	margin-top: .5em;
+}
+
+.product-name:last-of-type {
+	color: #999;
+}
+
+.product-name span {
+	font-size: 87%;
+	color: #999;
+ 	text-decoration: line-through;
+ 	margin-left: 1em;
+ 	letter-spacing: 1px;
+}
+
+.review {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+.review p {
+	margin-left: 45%;
+	font-size: 90%;
+}
+
+.review a {
+	font-size: .9em;
+}
+
+hr.line {
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    margin: 1em 0;
+}
+
+/*====== Product - Options Section ======
+====================================*/
+.size,
+.color {
+	display: inline-block;
+	width: 40%;
+	margin-bottom: 1em;
+}
+
+.size h3,
+.color h3,
+.quantity h3 {
+	font-size: 90%;
+	font-weight: 600;
+	color: #102b5a;
+	text-transform: uppercase;
+	padding-bottom: 0.5em;
+}
+
+.color-checks,
+.size-checks {
+	display: inline-block;
+}
+
+.color-checks input[type="checkbox"],
+.size-checks input[type="checkbox"] {
+	display: none;
+} 
+.color-checks input[type="checkbox"] + label span,
+.size-checks input[type="checkbox"] + label span {
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	margin-right: 2px;
+	cursor: pointer;
+	vertical-align: top;
+}
+
+.row {
+	margin-bottom: .5em;
+}
+
+/*====== Color-Set ======
+====================================*/
+.color-checks:first-child input[type="checkbox"] + label span {
+	background-color: #000;
+}
+.color-checks:first-child input[type="checkbox"]:checked + label span{
+	background: url(../images/colors/black.jpg);
+}
+
+.color-checks:nth-child(2) input[type="checkbox"] + label span {
+	background-color: #fff;
+	border: 1px solid #aaa;
+}
+.color-checks:nth-child(2) input[type="checkbox"]:checked + label span {
+	background: url(../images/colors/white.jpg);
+	border: none;
+}
+
+.color-checks:nth-child(3) input[type="checkbox"] + label span {
+	background-color: #aaa;
+}
+.color-checks:nth-child(3) input[type="checkbox"]:checked + label span {
+	background: url(../images/colors/gray.jpg)
+}
+
+.color-checks:nth-child(4) input[type="checkbox"] + label span {
+	background-color: #69699b;
+}
+.color-checks:nth-child(4) input[type="checkbox"]:checked + label span {
+	background: url(../images/colors/dull-blue.jpg)
+}
+
+div.row:nth-child(2) .color-checks:first-of-type input[type="checkbox"] + label span {
+	background-color: #17168e;
+}
+div.row:nth-child(2) .color-checks:first-of-type input[type="checkbox"]:checked + label span{
+	background: url(../images/colors/blue.jpg);
+}
+
+div.row:nth-child(2) .color-checks:nth-child(2) input[type="checkbox"] + label span {
+	background-color: #25b4ee;
+}
+div.row:nth-child(2) .color-checks:nth-child(2) input[type="checkbox"]:checked + label span{
+	background: url(../images/colors/aqua.jpg);
+}
+
+.color-checks:nth-child(4) { 
+	margin-right: 20%;
+} 
+
+/*====== Size-Set ==========
+====================================*/
+.size-checks input[type="checkbox"] + label span {
+	background-color: #dcdce0;
+	font-size: 80%;
+	font-weight: 600;
+	text-align: center;
+	padding-top: .4em;
+}
+
+div.row:first-child .size-checks:nth-child(2) input[type="checkbox"]:checked + label span{
+	text-indent: -9999px;
+	background: url(../images/icons/16.jpg);
+}
+
+div.row:first-child .size-checks:nth-child(3) input[type="checkbox"]:checked + label span{
+	text-indent: -9999px;
+	background: url(../images/icons/18.jpg);
+}
+
+.row input[disabled] + label span {
+	background-color: #eeeff1;
+	color: #bcbdbf;
+}
+
+.size {
+	position: relative;
+}
+
+.what-size {
+	position: absolute;
+	bottom: 5%;
+	right: -5%;
+	font-size: .9em;
+}
+
+/*====== Quantity Section ======
+====================================*/
+.quantity-form input[type="text"] {
+	background-color: #EBEDED;
+	width: 30px;
+	height: 25px;
+	text-align: center;
+	border: none;
+	box-shadow: inset 1px 2px 2px rgba(0,0,0,.25);
+}
+
+.quantity-form input[type="text"]:hover {
+	background-color: #fff;
+}
+
+.quantity-form input[type="text"]:focus {
+	background-color: #fff;
+}
+
+.quantity-form,
+.add-to-bag {
+	display: inline-block;
+	width: 40%;
+	vertical-align: top;
+}
+
+.add-to-bag {
+	width: 150px;
+	height: 30px;
+	background-color: #a2ca39;
+	border: 2px solid #eeeff1;
+	text-transform: uppercase;
+	font-size: .9em;
+	text-align: center;
+	padding: .4em .8em;
+	word-spacing: .2em;
+	letter-spacing: 1px;
+}
+
+.add-to-bag a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.add-to-bag span {
+	float: right;
+	text-align: right;
+	font-size: .8em;
+	padding-top: .2em;
+}
+
+/*====== Shipping Section ======
+====================================*/
+#shipping {
+	margin-bottom: 1em;
+	margin-top: 1em;
+}
+
+#shipping p {
+	color: #102b5a;
+	text-transform: uppercase;
+	font-weight: bold;
+	border: 2px dotted #102b5a;
+	padding: .7em;
+}
+
+
+/*====== Tabs Section ======
+====================================*/
+#tabs {
+	margin-bottom: .5em;
+}
+
+#tabs li {
+	float: left;
+	width: 30%;
+	border: solid #e6eaed;
+	border-width: 2px 2px 0 2px;
+	margin: 0 2px 0 0;
+	padding: .4em .6em ;
+	background-color: #e7e8ec;
+}
+
+#tabs li:nth-child(2),
+#tabs li:nth-child(3) {
+	position: relative;
+	top: 2px;
+}
+
+#tabs #selected {
+	position: relative;
+	top: 2px;
+	background: #fff;
+	border-color: #d8d9da;
+}
+
+#tabs a {
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #102b5a;
+	padding: .5em 2.5em 0 0;
+}
+
+#tab-1 {
+	border: 2px solid #d8d9da;
+	color: #777;
+	font-size: .9em;
+	word-spacing: 1px;
+	padding: .8em;
+	line-height: 1.1em;
+}
+
+#tab-1 h2,
+#tab-1 p {
+	padding: .4em 0;
+}
+
+/*======== Product-links ==========
+==================================*/
+#product-links {
+	padding: .1em .3em .2em;
+}
+
+#product-links li {
+	float: left;
+	width: 33%;
+}
+
+#product-links li:nth-child(2),
+#product-links li:nth-child(5) {
+	padding-left: 1.5em;
+}
+
+#product-links li:nth-child(3) {
+	padding-left: 4em;
+}
+
+#product-links li:first-child,
+#product-links li:nth-child(2),
+#product-links li:nth-child(3) {
+	padding-bottom: .3em;
+}
+
+#product-links a {
+	text-decoration: none;
+	font-size: .9em;
+}
+
+#product-links img {
+	padding-right: .5em;
+}
+
+/*========= Customer - Services ========
+======================================*/
+#reviews {
+	padding-left: .2em;
+}
+
+#reviews > header h2 {
+	display: inline;
+	color: #102b5a;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+
+aside#reviews > header {
+	border-bottom: 2px dotted #d8d9da;
+	padding: .3em 0 .5em 0;
+	margin-bottom: 1.2em
+}
+
+#reviews h2 + a {
+	float: right;
+	font-size: .9em;
+	letter-spacing: .5px;
+}
+
+.comment {
+	font-size: .9em;
+	line-height: 1.4em;
+}
+
+.comment h3 {
+	color: #102b5a;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+
+.line-2 {
+	background-color: #f3f3f3;
+	height: 8px;
+	border: 0;
+	margin: 1em 0;
+}
+
+.read-more:after {
+	content: "";
+	display: inline-block;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 3.5px 0 3.5px 7px;
+	border-color: transparent transparent transparent #102b5a;
+	margin-left: .3em;
+	vertical-align: middle;
+}
+
+/*============= Media Queries =============
+=============================================*/
+@media only screen and (max-width: 1230px) {
+	#main-content {
+		width: 85%;
+		margin-right: 0;
+	}
+	#product-description {
+		width: 50%;
+	}
+	#product-view {
+		margin-right: 2em;
+	}
+}
+
+@media only screen and (max-width: 1100px) {
+	#product-view {
+		margin-right: 1em;
+	}
+	#breadcrumbs {
+   		 margin: 1em 0 1em;
+	}
+	.what-size {
+   		 bottom: 10%;
+   		right: -15%;
+	}
+	.size, .color {
+		width: 45%;
+	}
+	.other-images img {
+		margin: .1em;
+	}
+	#product-links li:nth-child(2),
+	#product-links li:nth-child(5) {
+    	padding-left: 0.5em;
+	}
+	.promotion {
+		right: -5%;
+		font-size: .9em;
+	}
+}
+
+@media only screen and (max-width: 960px) {
+	.container {
+		width: 95%;
+	}
+	#product-view {
+		margin-right: .6em;
+		width: 40%;
+	}
+	#product-description {
+		width: 55%;
+	}
+	.other-images img {
+		display: inline-block;
+		width: 20%;
+	}
+	.promotion {
+		right: -10%;
+		font-size: .8em;
+	}
+}
+
+@media only screen and (max-width: 850px) {
+	#product-links li {
+		width: initial;
+	}
+	#product-links li:first-child,
+	#product-links li:nth-child(2) {
+		margin-right: 1em;
+	}
+	#product-links li:nth-child(3) {
+		padding-left: .5em;
+	}
+	#product-links li:nth-child(4),
+	#product-links li:nth-child(5) {
+		margin-right: 2em;
+	}
+	.promotion {
+		right: -15%;
+		font-size: .8em;
+	}
+}
