@@ -336,7 +336,7 @@ div.row:first-child .size-checks:nth-child(3) input[type="checkbox"]:checked + l
 	margin-top: 1em;
 }
 
-#shipping p {
+#shipping h2 {
 	color: #102b5a;
 	text-transform: uppercase;
 	font-weight: bold;
